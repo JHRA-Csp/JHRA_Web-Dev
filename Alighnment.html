@@ -16,7 +16,7 @@
                 gap: 5px;
             }
             #flex-wrapper{
-                display: flex;
+                display: none;
                 flex-direction: row;
                 justify-content: space-around;
                 align-items: center;
@@ -33,7 +33,7 @@
         <body>
             <h1>alighnment notes</h1>
             <div id="grid-wrapper">
-                <div id="box">
+                <div id="box" onmouseover="showHide()">
                     <p>Box 1</p>
                 </div>
                 <div id="box">
@@ -60,6 +60,28 @@
                     <p>Box 4</p>
                 </div>
             </div>
-            <button>Click Me</button>
+            <input type = "color" id="newColor">
+            <br>
+            <button onclick ="changeColor()">Click Me</button>
+            <script>
+                function changeColor(){
+                    let currentColor = document.getElementById
+                    ("newColor").value
+                    document.getElementById("box").style.
+                    backgroundColor = currentColor
+                }
+                function showHide(){
+                    let item = document.getElementById
+                    ("flex-wrapper").stlye.display
+                    if(item.style.display = "flex"){
+                        item.style.display="none"
+                        document.getElementById("text"). 
+                        innerHTML = "Show More"
+                    }
+                    else{
+                        item.style.display = "flex"
+                    }
+                }
+            </script>
         </body>
 </html>
