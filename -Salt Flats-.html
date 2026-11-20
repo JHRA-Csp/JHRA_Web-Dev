@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>-Salt Flats-</title>
+<meta charset="UTF-8">
+<style>
+h1 { 
+  text-align: center;
+  color: #ffffff;
+  background-color: #2b2b2b;
+  padding: 15px;
+  margin: 10px;
+}
+body {
+  background-color: #121212;
+  color: #d8d6d6;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 900;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+img {
+  width: 350px;
+  height: auto;
+  border-radius: 6px;
+  margin: 20px;
+}
+a {
+  color: #8ab4f8;
+}
+.List1 {
+  margin-top: 15px;
+  padding: 15px;
+  flex: 1;
+  background-color: #4e4e4e;
+  border-radius: 8px;
+}
+.ListContainer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.paragraph {
+  background-color: #2b2b2b;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+button {
+  background-color: #d1bc02;
+  color: #000000;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 900;
+  padding: 10px;
+  margin-top: 15px;
+  width: 220px;
+  cursor: pointer;
+}
+#hiddenStuff {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #2b2b2b;
+  border-radius: 8px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>-Salt Flats-</h1>
+</header>
+
+<div class="images">
+  <div>
+    <img src="https://img.ksl.com/slc/132/13278/1327891.jpg?filter=kslv2/inline_lg"
+         src="https://istockphoto.com" 
+         alt="Bonneville Salt Flats" 
+         onmouseover="this.src='https://stockvault.net'" 
+         onmouseout="this.src='https://istockphoto.com'">
+    <p>Image From:<img src= "https://media.istockphoto.com/id/2218521417/photo/photographer-explores-great-salt-flat-at-sunset.jpg?s=612x612&w=0&k=20&c=SMItjaCnLtad9By-QG9sUMzgptX5BolP4Yj7iXizLcM="a href="https://istockphoto.com" target="_blank"> istockphoto</a></p>
+  </div>
+
+  <img src="https://media.istockphoto.com/id/1349081411/photo/bonneville-salt-flats-sign.jpg?s=612x612&w=0&k=20&c=i8XN7RZtBXy4wGCj1uu7A9UJ2EN1baKl7BPV6XL2w0s=" alt="Bonneville Salt Flats">
+  <p>Image From:<a href="https://www.istockphoto.com/photos/bonneville-salt-flats-salt-speed-salt-flat" target="_blank"><a> istockphoto.net</a></p>
+
+  <img src="https://www.stockvault.net/data/2016/07/22/205106/preview16.jpg" alt="The Salt Flats">
+  <p>Image From:<a href="https://www.stockvault.net/photo/205106/salt-on-the-flat-land" target="_blank"> stockvault.net</a></p>
+
+<div class="ListContainer">
+  <div class="List1">
+    <p>Films that have been filmed on the Salt Flats</p>
+    <ol type="I">
+      <li>Pirates of the Caribbean: At World's end</li>
+      <li>Independance Day</li>
+      <li>The worlds fastest Indian</li>
+      <li>The Incredible Hulk</li>
+      <li>Need For Speed</li>
+    </ol>
+  </div>
+</div>
+
+<div class="paragraph">
+  <p>The Bonneville Salt Flats in northwestern Utah are a massive, 30,000-acre stretch of salt crust was left behind when the Great Lake Bonnville evaporated. The ground is so flat and covered in hexagonal salt shapes that it looks almost like another planet. The salt Flats sometimes are the home of most land speed compitions happen when race car drivers drive cars with a rocket engine inside it, just to reach new world record of 622.407 mph acheived by the Blue Flame in 1970 and held it for 13 years.</p>
+</div>
+
+<button id="btn" onclick="showHide()">The Yellow Submarine</button>
+
+<div id="hiddenStuff">
+  <img src="https://www.intermountainhistories.org/files/fullsize/bf7017251a1d00dbbe0345cc056829dc.jpg" src="https://stockvault.net" alt="The Salt Flats">
+  <p>The Bonneville Salt Flats in northwestern Utah are a massive, 30,000-acre stretch of salt crust was left behind when the Great Lake Bonnville evaporated.</p>
+</div>
+
+<script>
+function showHide() {
+  var x = document.getElementById("hiddenStuff");
+  var b = document.getElementById("btn");
+  if (x.style.display === "none" || x.style.display === "") {
+    x.style.display = "block";
+    b.innerHTML = "Hide The Yellow Submarine";
+  } else {
+    x.style.display = "none";
+    b.innerHTML = "The Yellow Submarine";
+  }
+}
+</script>
+
+</body>
